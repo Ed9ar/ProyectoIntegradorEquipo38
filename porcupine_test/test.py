@@ -11,8 +11,8 @@ audio_stream = None
 def main():
     try:
         porcupine = pvporcupine.create(access_key=os.environ['PORCUPINE_ACCESS_KEY'],
-                                    keyword_paths=['/Users/marcosguerrero/Documents/MNA/probando/Hola-te-bot_es_mac_v3_0_0.ppn'],
-                                    model_path='/Users/marcosguerrero/Documents/MNA/probando/porcupine_params_es.pv',
+                                    keyword_paths=['.Hola-te-bot_es_mac_v3_0_0.ppn'],
+                                    model_path='./porcupine_params_es.pv',
                                     sensitivities=[0.9])
 
         pa = pyaudio.PyAudio()
