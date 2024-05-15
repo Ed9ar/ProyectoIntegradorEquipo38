@@ -36,11 +36,11 @@ def main():
                 print(f"{datetime.now()} - 'Hola TecBot' detectado")
     except KeyboardInterrupt:
         print(f"{datetime.now()} - Stopped listening!")
-        exit()
     except Exception as e:
-        exit()
+        pass
     finally:
         porcupine.delete()
+        exit()
 
 if __name__ == '__main__':
     main()
